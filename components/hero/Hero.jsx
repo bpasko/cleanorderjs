@@ -8,7 +8,7 @@ const Hero = () => {
     <div className={classes.container}>
        <div className={classes.wrapper}>
         <div className={classes.left}>
-          <h2>Posprzątamy za Ciebie dosłownie wszystko <br />your loved ones</h2>
+          <h2>Posprzątamy za Ciebie wszystko to, <br />co będziesz potrzebować</h2>
           <h5>
             We can help you with the experience by providing you<br /> with amazing food.
             Burgers, Pizza, Spaghetti, <br/>You Can Get Everything Here
