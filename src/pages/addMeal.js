@@ -17,7 +17,7 @@ import app from '../firebase'
 const AddMeal = () => {
     const [title, setTitle] = useState("")
     const [desc, setDesc] = useState("")
-    const [category, setCategory] = useState('pizza')
+    const [category, setCategory] = useState('sprzątanie domu')
     const [price, setPrice] = useState(50)
     const [photo, setPhoto] = useState("")
     const router = useRouter()
@@ -76,27 +76,27 @@ const AddMeal = () => {
             <Navbar />
             <div className={classes.container}>
                 <div className={classes.wrapper}>
-                    <h2>Add Meal</h2>
+                    <h2>Dodawanie usług</h2>
                     <form onSubmit={handleSubmit}>
-                        <input type="text" placeholder='Title...' onChange={(e) => setTitle(e.target.value)} />
-                        <input type="text" placeholder='Desc...' onChange={(e) => setDesc(e.target.value)} />
+                        <input type="text" placeholder='Usługa...' onChange={(e) => setTitle(e.target.value)} />
+                        <input type="text" placeholder='Opis...' onChange={(e) => setDesc(e.target.value)} />
                         <select onChange={(e) => setCategory(e.target.value)}>
                             <option disabled>Select Category</option>
-                            <option value="pizza">Pizza</option>
-                            <option value="burger">Burger</option>
-                            <option value="gyros">Gyros</option>
-                            <option value="spaghetti">Spaghetti</option>
-                            <option value="vegetarian">Vegetarian</option>
-                            <option value="bread">Bread</option>
+                            <option value="sprzątanie domu">Sprzątanie domu</option>
+                            <option value="sprzątanie mieszkania">Sprzątanie mieszkania</option>
+                            <option value="sprzątanie biura">Sprzątanie biura</option>
+                            <option value="sprzątanie po remoncie">Sprzątanie po remoncie</option>
+                            <option value="sprzątanie po wynajmie">Sprzątanie po wynajmie</option>
+                            <option value="sprzątanie samochodu">Sprzątanie samochodu</option>
                         </select>
-                        <input type="number" placeholder='Price...' onChange={(e) => setPrice(e.target.value)} />
+                        <input type="number" placeholder='Cena...' onChange={(e) => setPrice(e.target.value)} />
                         <div className={classes.imageField}>
                             <label htmlFor='image'>
-                                Photo <AiOutlineFileImage size={25} />
+                                Zdjęcie <AiOutlineFileImage size={25} />
                             </label>
                             <input id='image' type="file" style={{ display: 'none' }} onChange={(e) => setPhoto(e.target.files[0])} />
                         </div>
-                        <button>Post</button>
+                        <button>Dodaj</button>
                     </form>
                 </div>
             </div>

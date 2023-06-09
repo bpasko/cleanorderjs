@@ -6,14 +6,14 @@ import classes from './catalog.module.css'
 const Catalog = ({ meals }) => {
 
   console.log(meals)
-  const [activeCategory, setActiveCategory] = useState('all')
+  const [activeCategory, setActiveCategory] = useState('wszystkie')
   const [filteredMeals, setFilteredMeals] = useState([])
 
   useEffect(() => {
      const filterMeals = () => {
       setFilteredMeals(() => {
         if(activeCategory){
-          if(activeCategory === 'all'){
+          if(activeCategory === 'wszystkie'){
             return meals
           }
           return [...meals].filter((meal) => meal.category === activeCategory)
@@ -28,30 +28,30 @@ const Catalog = ({ meals }) => {
     <div className={classes.container}>
       <div className={classes.wrapper}>
         <div className={classes.titles}>
-          <h5>Pick something delicious</h5>
-          <h2>Food and Categories</h2>
+          <h5>Co Cię interesuje?</h5>
+          <h2>Wybierz spośród kategorii sprzątania</h2>
         </div>
         <div className={classes.categories}>
-          <span onClick={() => setActiveCategory('all')} className={`${classes.category} ${activeCategory === 'all' ? classes.active : ''}`}>
-            All
+          <span onClick={() => setActiveCategory('wszystkie')} className={`${classes.category} ${activeCategory === 'wszystkie' ? classes.active : ''}`}>
+            Wszystkie
           </span>
-          <span onClick={() => setActiveCategory('pizza')} className={`${classes.category} ${activeCategory === 'pizza' ? classes.active : ''}`}>
-            Pizza
+          <span onClick={() => setActiveCategory('sprzątanie domu')} className={`${classes.category} ${activeCategory === 'sprzątanie domu' ? classes.active : ''}`}>
+            Sprzątanie domu
           </span>
-          <span onClick={() => setActiveCategory('burger')} className={`${classes.category} ${activeCategory === 'burger' ? classes.active : ''}`}>
-            Burger
+          <span onClick={() => setActiveCategory('sprzątanie mieszkania')} className={`${classes.category} ${activeCategory === 'sprzątanie mieszkania' ? classes.active : ''}`}>
+            Sprzątanie mieszkania
           </span>
-          <span onClick={() => setActiveCategory('gyros')} className={`${classes.category} ${activeCategory === 'gyros' ? classes.active : ''}`}>
-            Gyros
+          <span onClick={() => setActiveCategory('sprzątanie biura')} className={`${classes.category} ${activeCategory === 'sprzątanie biura' ? classes.active : ''}`}>
+            Sprzątanie biura
           </span>
-          <span onClick={() => setActiveCategory('spaghetti')} className={`${classes.category} ${activeCategory === 'spaghetti' ? classes.active : ''}`}>
-            Spaghetti
+          <span onClick={() => setActiveCategory('sprzątanie po remoncie')} className={`${classes.category} ${activeCategory === 'sprzątanie po remoncie' ? classes.active : ''}`}>
+            Sprzątanie po remoncie
           </span>
-          <span onClick={() => setActiveCategory('bread')} className={`${classes.category} ${activeCategory === 'bread' ? classes.active : ''}`}>
-            Bread
+          <span onClick={() => setActiveCategory('sprzątanie po wynajmie')} className={`${classes.category} ${activeCategory === 'sprzątanie po wynajmie' ? classes.active : ''}`}>
+            Sprzątanie po wynajmie
           </span>
-          <span onClick={() => setActiveCategory('vegetarian')} className={`${classes.category} ${activeCategory === 'vegetarian' ? classes.active : ''}`}>
-            Vegetarian
+          <span onClick={() => setActiveCategory('sprzątanie samochodu')} className={`${classes.category} ${activeCategory === 'sprzątanie samochodu' ? classes.active : ''}`}>
+            Sprzątanie samochodu
           </span>
         </div>
         {
@@ -69,7 +69,7 @@ const Catalog = ({ meals }) => {
               </Link>
              ))}
           </div>
-          : <h2 className={classes.noMeal}>There are no {activeCategory} meals in stock</h2>
+          : <h2 className={classes.noMeal}>Brak usług {activeCategory} na stanie</h2>
         }
       </div>
     </div>
