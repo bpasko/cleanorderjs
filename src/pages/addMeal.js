@@ -17,7 +17,7 @@ import app from '../firebase'
 const AddMeal = () => {
     const [title, setTitle] = useState("")
     const [desc, setDesc] = useState("")
-    const [category, setCategory] = useState('sprzątanie domu')
+    const [category, setCategory] = useState('dom')
     const [price, setPrice] = useState(50)
     const [photo, setPhoto] = useState("")
     const router = useRouter()
@@ -82,12 +82,12 @@ const AddMeal = () => {
                         <input type="text" placeholder='Opis...' onChange={(e) => setDesc(e.target.value)} />
                         <select onChange={(e) => setCategory(e.target.value)}>
                             <option disabled>Select Category</option>
-                            <option value="sprzątanie domu">Sprzątanie domu</option>
-                            <option value="sprzątanie mieszkania">Sprzątanie mieszkania</option>
-                            <option value="sprzątanie biura">Sprzątanie biura</option>
-                            <option value="sprzątanie po remoncie">Sprzątanie po remoncie</option>
-                            <option value="sprzątanie po wynajmie">Sprzątanie po wynajmie</option>
-                            <option value="sprzątanie samochodu">Sprzątanie samochodu</option>
+                            {/* <option value="dom">Sprzątanie domu</option> */}
+                            <option value="mieszkanie">Sprzątanie mieszkania</option>
+                            <option value="biuro">Sprzątanie biura</option>
+                            <option value="remont">Sprzątanie po remoncie</option>
+                            <option value="wynajem">Sprzątanie po wynajmie</option>
+                            <option value="dodatkowe">Usługi dodatkowe</option>
                         </select>
                         <input type="number" placeholder='Cena...' onChange={(e) => setPrice(e.target.value)} />
                         <div className={classes.imageField}>

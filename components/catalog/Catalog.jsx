@@ -35,23 +35,23 @@ const Catalog = ({ meals }) => {
           <span onClick={() => setActiveCategory('wszystkie')} className={`${classes.category} ${activeCategory === 'wszystkie' ? classes.active : ''}`}>
             Wszystkie
           </span>
-          <span onClick={() => setActiveCategory('sprzątanie domu')} className={`${classes.category} ${activeCategory === 'sprzątanie domu' ? classes.active : ''}`}>
+          {/* <span onClick={() => setActiveCategory('dom')} className={`${classes.category} ${activeCategory === 'dom' ? classes.active : ''}`}>
             Sprzątanie domu
-          </span>
-          <span onClick={() => setActiveCategory('sprzątanie mieszkania')} className={`${classes.category} ${activeCategory === 'sprzątanie mieszkania' ? classes.active : ''}`}>
+          </span> */}
+          <span onClick={() => setActiveCategory('mieszkanie')} className={`${classes.category} ${activeCategory === 'mieszkanie' ? classes.active : ''}`}>
             Sprzątanie mieszkania
           </span>
-          <span onClick={() => setActiveCategory('sprzątanie biura')} className={`${classes.category} ${activeCategory === 'sprzątanie biura' ? classes.active : ''}`}>
+          <span onClick={() => setActiveCategory('biuro')} className={`${classes.category} ${activeCategory === 'biuro' ? classes.active : ''}`}>
             Sprzątanie biura
           </span>
-          <span onClick={() => setActiveCategory('sprzątanie po remoncie')} className={`${classes.category} ${activeCategory === 'sprzątanie po remoncie' ? classes.active : ''}`}>
+          <span onClick={() => setActiveCategory('remont')} className={`${classes.category} ${activeCategory === 'remont' ? classes.active : ''}`}>
             Sprzątanie po remoncie
           </span>
-          <span onClick={() => setActiveCategory('sprzątanie po wynajmie')} className={`${classes.category} ${activeCategory === 'sprzątanie po wynajmie' ? classes.active : ''}`}>
+          <span onClick={() => setActiveCategory('wynajem')} className={`${classes.category} ${activeCategory === 'wynajem' ? classes.active : ''}`}>
             Sprzątanie po wynajmie
           </span>
-          <span onClick={() => setActiveCategory('sprzątanie samochodu')} className={`${classes.category} ${activeCategory === 'sprzątanie samochodu' ? classes.active : ''}`}>
-            Sprzątanie samochodu
+          <span onClick={() => setActiveCategory('dodatkowe')} className={`${classes.category} ${activeCategory === 'dodatkowe' ? classes.active : ''}`}>
+            Usługi dodatkowe
           </span>
         </div>
         {
@@ -64,7 +64,7 @@ const Catalog = ({ meals }) => {
                 </div>
                 <div className={classes.mealData}>
                   <h4>{meal?.title}</h4>
-                  <span>${meal?.price}</span>
+                  <span>{meal?.price} zł</span>
                 </div>
               </Link>
              ))}

@@ -40,22 +40,22 @@ const MealDetails = ({ meal }) => {
                     </div>
                     <div className={classes.right}>
                         <h2 className={classes.title}>{meal?.title}</h2>
-                        <span className={classes.category}>Category: <span>{meal?.category}</span></span>
-                        <p className={classes.desc}>Meal description: <span>{meal?.desc?.length > 70 ? `${meal?.desc.slice(0, 70)}...}` : meal.desc}</span></p>
-                        <span className={classes.price}>Price: $<span>{meal?.price}</span></span>
-                        <button onClick={() => setShowForm(true)} className={classes.orderButton}>Order Now</button>
-                        <span className={classes.readyIn}>Meals are prepared for 30 to 45 minutes</span>
+                        <span className={classes.category}>Kategoria: <span>{meal?.category}</span></span>
+                        <p className={classes.desc}><strong>Opis usługi:</strong> <span>{meal?.desc?.length > 70 ? `${meal?.desc.slice(0, 500)}` : meal.desc}</span></p>
+                        <span className={classes.price}>Cena: <span>{meal?.price} zł</span></span>
+                        <button onClick={() => setShowForm(true)} className={classes.orderButton}>Zamawiam</button>
+                        {/* <span className={classes.readyIn}>Meals are prepared for 30 to 45 minutes</span> */}
                     </div>
                 </div>
                 {
                     showForm && (
                         <div className={classes.contactForm} onClick={handleCloseForm}>
                             <div className={classes.contactFormWrapper} onClick={(e) => e.stopPropagation()}>
-                                <h2>Order meal</h2>
+                                <h2>Zamów usługę</h2>
                                 <form onSubmit={handleEmail} ref={formRef}>
-                                    <input type="email" placeholder='Your Email' name="to_email" onChange={(e) => setEmail(e.target.value)} />
-                                    <textarea type="text" placeholder="Address..." name="message" onChange={(e) => setMessage(e.target.value)} />
-                                    <button>Send</button>
+                                    <input type="email" placeholder='wpisz email' name="to_email" onChange={(e) => setEmail(e.target.value)} />
+                                    <textarea type="text" placeholder="wpisz dane kontaktowe" name="message" onChange={(e) => setMessage(e.target.value)} />
+                                    <button>Wyślij zapytanie</button>
                                 </form>
                                 <AiOutlineClose onClick={handleCloseForm} className={classes.removeIcon} />
                             </div>
