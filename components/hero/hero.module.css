@@ -1,7 +1,10 @@
 .container{
-    margin-top: 5rem;
     height: calc(100vh - 60px);
     width: 100%;
+    margin-top: 7.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .wrapper{
@@ -21,16 +24,18 @@
 .left > h2{
     margin-bottom: 5rem;
     font-size: 46px;
-    color: #eaa321;
+    color: lavender;
     white-space: nowrap;
     line-height: 65px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .left > h5{
-    color: #bb8521;
+    color:lavender;
     font-size: 24px;
     line-height: 39px;
     font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .left > .buttons{
@@ -42,38 +47,39 @@
 
 .buttons > button{
     outline: none;
-    border: 1px solid transparent;
-    font-size: 20px;
-    border-radius: 5px;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 50px;
+    border: solid;
+    border-color: rgb(255, 186, 48);
+    color: lavender;
+    background-color: rgb(38, 186, 255);
+    padding: 0.75rem 1.75rem;
     cursor: pointer;
-}
-
-.orderNow{
-    background-color: #eaa321;
-    color: #333;
-    padding: 0.75rem 1.75rem;
     transition: 150ms all;
+    cursor: pointer;    box-shadow: 
+    0 2px 3px rgba(0, 0, 0, 0.5), 
+    0 -2px 3px rgba(0, 0, 0, 0.5), 
+    2px 0 3px rgba(0, 0, 0, 0.5),
+    -2px 0 3px rgba(0, 0, 0, 0.5),
+    0 0 5px 0 rgb(71, 144, 234),
+    0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
-
-.seeMore{
-    background-color: #333;
-    color: #fbbf51;
-    padding: 0.75rem 1.75rem;
-    transition: 150ms all;
-}
-
 .orderNow:hover{
-    background-color: #d49829;
-    color: #444;
+    transform: scale(1.100);
+    color: rgb(71, 144, 234);
+    background-color: rgb(255, 186, 48);
+    font-weight: bold;
 }
-
 .seeMore:hover{
-    background-color: #3e3e3e;
+    transform: scale(1.100);
+    color: rgb(71, 144, 234);
+    background-color: rgb(255, 186, 48);
+    font-weight: bold;
 }
-
 .disclaimer{
     margin-top: 3rem;
-    color: #666;
+    color: lavender;
     font-size: 17px;
 }
 

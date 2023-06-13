@@ -1,8 +1,12 @@
 import { signIn, signOut, useSession } from 'next-auth/react'
 import Link from 'next/link'
 import React from 'react'
-import { AiOutlineLogout, AiOutlineMail } from 'react-icons/ai'
 import classes from './navbar.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faList } from '@fortawesome/free-solid-svg-icons';
+import { faFaceSmile } from '@fortawesome/free-solid-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { useMediaQuery } from 'react-responsive'
 
 const Navbar = () => {
   const session = useSession()
@@ -11,26 +15,25 @@ const Navbar = () => {
     <div className={classes.container}>
       <div className={classes.wrapper}>
         <Link href='/' className={classes.left}>
-          <h2>Maluszek</h2>
+          <h2>CLEANING APP</h2>
+          <h3>let us handle this for you...</h3>
         </Link>
-        <ul className={classes.center}>
-          <li className={classes.listItem}>Home</li>
-          <li className={classes.listItem}>About</li>
-          <li className={classes.listItem}>Contact Us</li>
-          <li className={classes.listItem}>Featured</li>
-        </ul>
+        <div className={classes.center}>
+          <div className={classes.listItem}><FontAwesomeIcon icon={faList} />OFERTA</div>
+          <div className={classes.listItem}><FontAwesomeIcon icon={faFaceSmile} /> O NAS</div>
+          <div className={classes.listItem}><FontAwesomeIcon icon={faPhone} />KONTAKT</div>
+          </div> 
         <div className={classes.right}>
           {session.status !== 'authenticated'
             ? (
               <>
-                <AiOutlineMail size={30} />
-                <button onClick={() => signIn()} className={classes.signIn}>Sign In</button>
+                
+                <button onClick={() => signIn()} className={classes.signIn}>LOGOWANIE</button>
               </>
             )
             : <>
-              <div className={classes.logout} onClick={() => signOut()}>
-                Logout <AiOutlineLogout />
-              </div>
+              <button className={classes.logout} onClick={() => signOut()}>WYLOGUJ
+              </button>
               <Link className={classes.addMeal} href='/addMeal'>
                 Add Meal
               </Link>
