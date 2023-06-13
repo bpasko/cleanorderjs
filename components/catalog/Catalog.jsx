@@ -7,15 +7,19 @@ import { useMediaQuery } from 'react-responsive'
 const Catalog = ({ meals }) => {
 
   console.log(meals)
+<<<<<<< HEAD
   const isDesktop = useMediaQuery({ minWidth: 1024 });
   const [activeCategory, setActiveCategory] = useState('all')
+=======
+  const [activeCategory, setActiveCategory] = useState('wszystkie')
+>>>>>>> origin/magdaok
   const [filteredMeals, setFilteredMeals] = useState([])
 
   useEffect(() => {
      const filterMeals = () => {
       setFilteredMeals(() => {
         if(activeCategory){
-          if(activeCategory === 'all'){
+          if(activeCategory === 'wszystkie'){
             return meals
           }
           return [...meals].filter((meal) => meal.category === activeCategory)
@@ -30,30 +34,30 @@ const Catalog = ({ meals }) => {
     <div className={`${classes.container} ${isDesktop ? classes.desktop : ''}`}>
       <div className={`${classes.wrapper} ${isDesktop ? classes.desktopWrapper : ''}`}>
         <div className={classes.titles}>
-          <h5>Pick something delicious</h5>
-          <h2>Food and Categories</h2>
+          <h5>Co Cię interesuje?</h5>
+          <h2>Wybierz spośród kategorii sprzątania</h2>
         </div>
         <div className={classes.categories}>
-          <span onClick={() => setActiveCategory('all')} className={`${classes.category} ${activeCategory === 'all' ? classes.active : ''}`}>
-            All
+          <span onClick={() => setActiveCategory('wszystkie')} className={`${classes.category} ${activeCategory === 'wszystkie' ? classes.active : ''}`}>
+            Wszystkie
           </span>
-          <span onClick={() => setActiveCategory('pizza')} className={`${classes.category} ${activeCategory === 'pizza' ? classes.active : ''}`}>
-            Pizza
+          {/* <span onClick={() => setActiveCategory('dom')} className={`${classes.category} ${activeCategory === 'dom' ? classes.active : ''}`}>
+            Sprzątanie domu
+          </span> */}
+          <span onClick={() => setActiveCategory('mieszkanie')} className={`${classes.category} ${activeCategory === 'mieszkanie' ? classes.active : ''}`}>
+            Sprzątanie mieszkania
           </span>
-          <span onClick={() => setActiveCategory('burger')} className={`${classes.category} ${activeCategory === 'burger' ? classes.active : ''}`}>
-            Burger
+          <span onClick={() => setActiveCategory('biuro')} className={`${classes.category} ${activeCategory === 'biuro' ? classes.active : ''}`}>
+            Sprzątanie biura
           </span>
-          <span onClick={() => setActiveCategory('gyros')} className={`${classes.category} ${activeCategory === 'gyros' ? classes.active : ''}`}>
-            Gyros
+          <span onClick={() => setActiveCategory('remont')} className={`${classes.category} ${activeCategory === 'remont' ? classes.active : ''}`}>
+            Sprzątanie po remoncie
           </span>
-          <span onClick={() => setActiveCategory('spaghetti')} className={`${classes.category} ${activeCategory === 'spaghetti' ? classes.active : ''}`}>
-            Spaghetti
+          <span onClick={() => setActiveCategory('wynajem')} className={`${classes.category} ${activeCategory === 'wynajem' ? classes.active : ''}`}>
+            Sprzątanie po wynajmie
           </span>
-          <span onClick={() => setActiveCategory('bread')} className={`${classes.category} ${activeCategory === 'bread' ? classes.active : ''}`}>
-            Bread
-          </span>
-          <span onClick={() => setActiveCategory('vegetarian')} className={`${classes.category} ${activeCategory === 'vegetarian' ? classes.active : ''}`}>
-            Vegetarian
+          <span onClick={() => setActiveCategory('dodatkowe')} className={`${classes.category} ${activeCategory === 'dodatkowe' ? classes.active : ''}`}>
+            Usługi dodatkowe
           </span>
         </div>
         {
@@ -66,12 +70,12 @@ const Catalog = ({ meals }) => {
                 </div>
                 <div className={classes.mealData}>
                   <h4>{meal?.title}</h4>
-                  <span>${meal?.price}</span>
+                  <span>{meal?.price} zł</span>
                 </div>
               </Link>
              ))}
           </div>
-          : <h2 className={classes.noMeal}>There are no {activeCategory} meals in stock</h2>
+          : <h2 className={classes.noMeal}>Brak usług {activeCategory} na stanie</h2>
         }
       </div>
     </div>

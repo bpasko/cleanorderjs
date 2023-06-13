@@ -13,7 +13,7 @@ const MealSchema = new mongoose.Schema({
     },
     category: {
         type: String,
-        enum: ['pizza', 'spaghetti', 'vegetarian', 'bread', 'gyros', 'burger'],
+        enum: ['dom', 'mieszkanie', 'biuro', 'remont', 'wynajem', 'dodatkowe'],
         required: true
     },
     price: {
