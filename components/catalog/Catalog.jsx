@@ -7,12 +7,7 @@ import { useMediaQuery } from 'react-responsive'
 const Catalog = ({ meals }) => {
 
   console.log(meals)
-<<<<<<< HEAD
-  const isDesktop = useMediaQuery({ minWidth: 1024 });
   const [activeCategory, setActiveCategory] = useState('all')
-=======
-  const [activeCategory, setActiveCategory] = useState('wszystkie')
->>>>>>> origin/magdaok
   const [filteredMeals, setFilteredMeals] = useState([])
 
   useEffect(() => {
@@ -31,8 +26,8 @@ const Catalog = ({ meals }) => {
 
 
   return (
-    <div className={`${classes.container} ${isDesktop ? classes.desktop : ''}`}>
-      <div className={`${classes.wrapper} ${isDesktop ? classes.desktopWrapper : ''}`}>
+    <div className={classes.container}>
+      <div className={classes.wrapper}>
         <div className={classes.titles}>
           <h5>Co Cię interesuje?</h5>
           <h2>Wybierz spośród kategorii sprzątania</h2>
