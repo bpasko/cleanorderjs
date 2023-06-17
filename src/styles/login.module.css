@@ -13,16 +13,32 @@
     align-items: center;
 }
 
-.wrapper > h2{
-    margin-bottom: 3.75rem;
+.wrapper > h1{
+    margin-bottom: 20px;
 }
 
 .wrapper > form{
-    border: 1px solid orange;
-    border-radius: 8px;
+    position: relative;
+    border-radius: 50px;
+    border: solid;
+    color: lavender;
+    border-color: rgb(255, 186, 48);
+    background-color: rgb(71, 144, 234);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.5), 
+    0 -2px 4px rgba(0, 0, 0, 0.5), 
+    2px 0 4px rgba(0, 0, 0, 0.5),
+    -2px 0 4px rgba(0, 0, 0, 0.5),
+    0 0 5px 0 rgb(76, 198, 247),
+    0 0 10px 0 rgba(0, 0, 0, 0.3);
     padding: 2.5rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 2.5rem;
 }
 
@@ -34,15 +50,29 @@
 }
 
 .wrapper > form > button{
-    cursor: pointer;
     outline: none;
-    border: none;
-    margin: 0 auto;
-    margin-top: 2.5rem;
-    border-radius: 5px;
-    font-size: 18px;
+    border-radius: 50px;
+    border: solid;
+    color: lavender;
+    border-color: rgb(255, 186, 48);
+    background-color: rgb(71, 144, 234);
+    padding: 15px;
     padding: 0.5rem 1.25rem;
-    background-color: orange;
-    color: #333;
-    width: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 150ms all;
+    box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.5), 
+    0 -2px 4px rgba(0, 0, 0, 0.5), 
+    2px 0 4px rgba(0, 0, 0, 0.5),
+    -2px 0 4px rgba(0, 0, 0, 0.5),
+    0 0 5px 0 rgb(76, 198, 247),
+    0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+.wrapper > form > button:hover{
+    transform: scale(1.100);
+    color: rgb(71, 144, 234);
+    background-color: rgb(255, 186, 48);
+    font-weight: bold;
 }

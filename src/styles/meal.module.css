@@ -32,13 +32,13 @@
     margin-bottom: 3.75rem;
     text-transform: capitalize;
     font-size: 36px;
-    color: #e2a024;
+    color:  lavender;
     margin-left: -0.5rem;
 }
 
 .category{
     font-size: 22px;
-    color: #f68613;
+    color:  lavender;
     margin-bottom: 5rem;
     font-weight: bold;
 }
@@ -47,10 +47,20 @@
     text-transform: capitalize;
     font-weight: 500;
     padding: 0.25rem 0.75rem;
-    background-color: #c5850d;
-    color: #eae3e3;
+    border-radius: 50px;
+    border: solid;
+    border-color: rgb(255, 186, 48);
+    background-color:  rgb(76, 198, 247);
+    color: lavender;
     border-radius: 8px;
     margin-left: 1rem;
+    box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.5), 
+    0 -2px 4px rgba(0, 0, 0, 0.5), 
+    2px 0 4px rgba(0, 0, 0, 0.5),
+    -2px 0 4px rgba(0, 0, 0, 0.5),
+    0 0 5px 0 rgb(76, 198, 247),
+    0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .desc{
@@ -75,24 +85,43 @@
 }
 
 .orderButton{
-    border: 1px solid transparent;
     outline: none;
-    margin-bottom: 10rem;
-    width: 200px;
-    padding: 1rem;
-    border-radius: 8px;
-    font-size: 18px;
+    border-radius: 50px;
+    border: solid;
+    color: lavender;
+    border-color: rgb(255, 186, 48);
+    background-color: rgb(76, 198, 247);
+    padding: 15px;
+    padding: 0.5rem 1.25rem;
+    font-size: 20px;
     font-weight: bold;
-    background-color: #c5850d;
-    color: #efefef;
     cursor: pointer;
-    transition: 150ms ease-in-out;
+    transition: 150ms all;
+    box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.5), 
+    0 -2px 4px rgba(0, 0, 0, 0.5), 
+    2px 0 4px rgba(0, 0, 0, 0.5),
+    -2px 0 4px rgba(0, 0, 0, 0.5),
+    0 0 5px 0 rgb(76, 198, 247),
+    0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .orderButton:hover{
-    border-color: #c5850d;
-    color: #c5850d;
-    background-color: transparent;
+    scale: 1.1;
+    background-color: rgb(255, 186, 48);
+    color: rgb(71, 144, 234);
+    font-weight: bold;
+    border-radius: 50px;
+    border: solid;
+    border-color: rgb(255, 186, 48);
+    transform: scale(1.100);
+    box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.5), 
+    0 -2px 4px rgba(0, 0, 0, 0.5), 
+    2px 0 4px rgba(0, 0, 0, 0.5),
+    -2px 0 4px rgba(0, 0, 0, 0.5),
+    0 0 5px 0 rgb(76, 198, 247),
+    0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .contactForm{
@@ -110,10 +139,22 @@
 
 .contactFormWrapper{
     position: relative;
-    background-color: #fff;
-    height: 65vh;
-    width: 25vw;
+    border-radius: 50px;
+    border: solid;
+    color: lavender;
+    border-color: rgb(255, 186, 48);
+    background-color: rgb(71, 144, 234);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
     border-radius: 20px;
+    box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.5), 
+    0 -2px 4px rgba(0, 0, 0, 0.5), 
+    2px 0 4px rgba(0, 0, 0, 0.5),
+    -2px 0 4px rgba(0, 0, 0, 0.5),
+    0 0 5px 0 rgb(76, 198, 247),
+    0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .contactFormWrapper > h2{
@@ -151,16 +192,42 @@
 
 .contactFormWrapper button{
     outline: none;
-    border: none;
-    cursor: pointer;
-    margin-top: 5rem;
-    padding: 0.5rem 1.5rem;
-    background-color: #c5850d;
-    color: #fff;
-    border-radius: 8px;
+    border-radius: 50px;
+    border: solid;
+    color: lavender;
+    border-color: rgb(255, 186, 48);
+    background-color: rgb(71, 144, 234);
+    padding: 15px;
+    padding: 0.5rem 1.25rem;
     font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 150ms all;
+    box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.5), 
+    0 -2px 4px rgba(0, 0, 0, 0.5), 
+    2px 0 4px rgba(0, 0, 0, 0.5),
+    -2px 0 4px rgba(0, 0, 0, 0.5),
+    0 0 5px 0 rgb(76, 198, 247),
+    0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
-
+.contactFormWrapper button:hover{
+    scale: 1.1;
+    background-color: rgb(255, 186, 48);
+    color: rgb(71, 144, 234);
+    font-weight: bold;
+    border-radius: 50px;
+    border: solid;
+    border-color: rgb(255, 186, 48);
+    transform: scale(1.100);
+    box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.5), 
+    0 -2px 4px rgba(0, 0, 0, 0.5), 
+    2px 0 4px rgba(0, 0, 0, 0.5),
+    -2px 0 4px rgba(0, 0, 0, 0.5),
+    0 0 5px 0 rgb(76, 198, 247),
+    0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
 .removeIcon{
     position: absolute;
     top: 1rem;

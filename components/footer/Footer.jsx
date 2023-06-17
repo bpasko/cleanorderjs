@@ -6,23 +6,22 @@ const Footer = () => {
     <footer className={classes.footer}>
       <div className={classes.wrapper}>
         <div className={classes.col}>
-          <h2>About the App</h2>
+          <h2>O aplikacji:</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam recusandae non molestiae, ipsa enim, pariatur
-            cupiditate quia quas deserunt illum laborum optio eaque magnam, officiis alias! Culpa beatae consequuntur unde.
+Aplikacja zaliczeniowa Uniwersytet WSB Merito
           </p>
         </div>
         <div className={classes.col}>
-          <h2>Contacts</h2>
-          <span>Phone + 123 456 789</span>
-          <span>YouTube: Karolina</span>
-          <span>Instagram: Beata</span>
+          <h2>Kontakt</h2>
+          <span>telefon + 123 456 789</span>
+          <span>YouTube: Cleaning APP</span>
+          <span>Instagram: cleaningApp</span>
         </div>
         <div className={classes.col}>
-          <h2>Location</h2>
-          <span>Continent: Europe</span>
-          <span>Country: France</span>
-          <span>Current Location: Paris</span>
+          <h2>Lokalizacja</h2>
+          <span>Kontynent: Europa</span>
+          <span>Kraj: Polska</span>
+          <span>Obecna lokalizacja: Warszawa</span>
         </div>
       </div>
     </footer>

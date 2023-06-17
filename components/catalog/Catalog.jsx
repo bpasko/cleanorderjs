@@ -2,8 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import classes from './catalog.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useMediaQuery } from 'react-responsive'
-
+import { faBrush, faCity, faHouse, faKey, faPlus } from '@fortawesome/free-solid-svg-icons';
 const Catalog = ({ meals }) => {
 
   console.log(meals)
@@ -33,25 +34,25 @@ const Catalog = ({ meals }) => {
           <h2>Wybierz spośród kategorii sprzątania</h2>
         </div>
         <div className={classes.categories}>
-          <span onClick={() => setActiveCategory('wszystkie')} className={`${classes.category} ${activeCategory === 'wszystkie' ? classes.active : ''}`}>
+          <span  onClick={() => setActiveCategory('wszystkie')} className={`${classes.category} ${activeCategory === 'wszystkie' ? classes.active : ''}`}>
             Wszystkie
           </span>
           {/* <span onClick={() => setActiveCategory('dom')} className={`${classes.category} ${activeCategory === 'dom' ? classes.active : ''}`}>
             Sprzątanie domu
           </span> */}
-          <span onClick={() => setActiveCategory('mieszkanie')} className={`${classes.category} ${activeCategory === 'mieszkanie' ? classes.active : ''}`}>
+          <span onClick={() => setActiveCategory('mieszkanie')} className={`${classes.category} ${activeCategory === 'mieszkanie' ? classes.active : ''}`}><FontAwesomeIcon icon={faHouse} style={{ transform: 'scale(0.8)' }} />
             Sprzątanie mieszkania
           </span>
-          <span onClick={() => setActiveCategory('biuro')} className={`${classes.category} ${activeCategory === 'biuro' ? classes.active : ''}`}>
+          <span onClick={() => setActiveCategory('biuro')} className={`${classes.category} ${activeCategory === 'biuro' ? classes.active : ''}`}><FontAwesomeIcon icon={faCity} style={{transform: 'scale(0.8)'}} />
             Sprzątanie biura
           </span>
-          <span onClick={() => setActiveCategory('remont')} className={`${classes.category} ${activeCategory === 'remont' ? classes.active : ''}`}>
+          <span onClick={() => setActiveCategory('remont')} className={`${classes.category} ${activeCategory === 'remont' ? classes.active : ''}`}><FontAwesomeIcon icon={faBrush} style={{transform: 'scale(0.8)'}} />
             Sprzątanie po remoncie
           </span>
-          <span onClick={() => setActiveCategory('wynajem')} className={`${classes.category} ${activeCategory === 'wynajem' ? classes.active : ''}`}>
+          <span onClick={() => setActiveCategory('wynajem')} className={`${classes.category} ${activeCategory === 'wynajem' ? classes.active : ''}`}><FontAwesomeIcon icon={faKey} style={{transform: 'scale(0.8)'}} />
             Sprzątanie po wynajmie
           </span>
-          <span onClick={() => setActiveCategory('dodatkowe')} className={`${classes.category} ${activeCategory === 'dodatkowe' ? classes.active : ''}`}>
+          <span onClick={() => setActiveCategory('dodatkowe')} className={`${classes.category} ${activeCategory === 'dodatkowe' ? classes.active : ''}`}><FontAwesomeIcon icon={faPlus} style={{transform: 'scale(0.8)'}} />
             Usługi dodatkowe
           </span>
         </div>

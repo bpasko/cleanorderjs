@@ -15,38 +15,55 @@
 
 .wrapper > h2{
     font-size: 36px;
+    padding-bottom: 20px;
 }
 
 .wrapper > form{
-    margin-top: 3.75rem;
+    position: relative;
+    border-radius: 50px;
+    border: solid;
+    color: lavender;
+    border-color: rgb(255, 186, 48);
+    background-color: rgb(71, 144, 234);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.5), 
+    0 -2px 4px rgba(0, 0, 0, 0.5), 
+    2px 0 4px rgba(0, 0, 0, 0.5),
+    -2px 0 4px rgba(0, 0, 0, 0.5),
+    0 0 5px 0 rgb(76, 198, 247),
+    0 0 10px 0 rgba(0, 0, 0, 0.3);
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 2.5rem;
 }
 
 .wrapper > form > input{
     outline: none;
-    border: 1px solid #e09762;
-    background-color: transparent;
+    border: 1px solid rgb(255, 186, 48);
+    background-color: lavender;
     padding: 0.75rem 1.5rem;
     border-radius: 8px;
 }
 
-.wrapper > form> input::placeholder{
-    color: #e09762;
-}
 
 .wrapper > form > select{
     outline: none;
-    border: 1px solid #e09762;
-    background-color: transparent;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    color: #e09762;
+    border: 1px solid transparent;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
 }
 
 .wrapper > form > input{
-    color: #e09762;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
 }
 
 .imageField > label{
@@ -58,18 +75,29 @@
 
 .wrapper > form > button{
     outline: none;
-    border: 1px solid transparent;
+    border-radius: 50px;
+    border: solid;
+    color: lavender;
+    border-color: rgb(255, 186, 48);
+    background-color: rgb(71, 144, 234);
+    padding: 15px;
     padding: 0.5rem 1.25rem;
-    border-radius: 8px;
-    background-color: #df8545;
-    color: #fff;
+    font-size: 20px;
     font-weight: bold;
-    font-size: 18px;
     cursor: pointer;
+    transition: 150ms all;
+    box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.5), 
+    0 -2px 4px rgba(0, 0, 0, 0.5), 
+    2px 0 4px rgba(0, 0, 0, 0.5),
+    -2px 0 4px rgba(0, 0, 0, 0.5),
+    0 0 5px 0 rgb(76, 198, 247),
+    0 0 10px 0 rgba(0, 0, 0, 0.3);;
 }
 
 .wrapper > form > button:hover{
-    border-color: #df8545;
-    background-color: transparent;
-    color: #df8545;
+    scale: 1.1;
+    color: rgb(71, 144, 234);
+    background-color: rgb(255, 186, 48);
+    font-weight: bold;
 }

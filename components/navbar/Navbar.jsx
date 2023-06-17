@@ -1,15 +1,16 @@
 import { signIn, signOut, useSession } from 'next-auth/react'
 import Link from 'next/link'
-import React from 'react'
+import React from 'react';
 import classes from './navbar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faList } from '@fortawesome/free-solid-svg-icons';
 import { faFaceSmile } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { useMediaQuery } from 'react-responsive'
 
 const Navbar = () => {
   const session = useSession()
+
+  
 
   return (
     <div className={classes.container}>
@@ -35,7 +36,7 @@ const Navbar = () => {
               <button className={classes.logout} onClick={() => signOut()}>WYLOGUJ
               </button>
               <Link className={classes.addMeal} href='/addMeal'>
-                Add Meal
+                DODAJ
               </Link>
             </>
           }

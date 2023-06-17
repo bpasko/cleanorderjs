@@ -6,6 +6,7 @@ import Hero from '../../components/hero/Hero'
 import axios from 'axios'
 import Footer from '../../components/footer/Footer'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({ meals }) {

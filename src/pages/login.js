@@ -36,13 +36,13 @@ const Login = () => {
     return (
         <>
             <Navbar />
-            <div className={classes.container}>
+            <div className={classes.container}>s
                 <div className={classes.wrapper}>
-                    <h2>Login</h2>
+                <h1>Login</h1>
                     <form onSubmit={handleSubmit}>
-                        <input type="text" placeholder='Username...' onChange={(e) => setUsername(e.target.value)} />
-                        <input type="password" placeholder='Password...' onChange={(e) => setPassword(e.target.value)} />
-                        <button type='submit'>Post</button>
+                        <input type="text" placeholder='Nazwa użytkownika' onChange={(e) => setUsername(e.target.value)} />
+                        <input type="password" placeholder='Hasło' onChange={(e) => setPassword(e.target.value)} />
+                        <button type='submit'>ZALOGUJ</button>
                     </form>
                 </div>
                 <ToastContainer />

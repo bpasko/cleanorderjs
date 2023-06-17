@@ -55,6 +55,7 @@ const MealDetails = ({ meal }) => {
                                 <form onSubmit={handleEmail} ref={formRef}>
                                     <input type="email" placeholder='wpisz email' name="to_email" onChange={(e) => setEmail(e.target.value)} />
                                     <textarea type="text" placeholder="wpisz dane kontaktowe" name="message" onChange={(e) => setMessage(e.target.value)} />
+                                    <textarea type="text" placeholder="wpisz datę i godzinę wykonania usługi" name="message" onChange={(e) => setMessage(e.target.value)} />
                                     <button>Wyślij zapytanie</button>
                                 </form>
                                 <AiOutlineClose onClick={handleCloseForm} className={classes.removeIcon} />
