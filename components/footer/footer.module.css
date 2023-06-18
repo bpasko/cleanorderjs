@@ -26,10 +26,11 @@
     margin-bottom: 15px;
     justify-self: flex-start;
     margin-left: -5px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .col>p {
     max-width: 425px;
-    color:lavender;
+    color:rgb(244, 244, 255);
     font-size: 15px;
 }

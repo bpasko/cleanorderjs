@@ -22,20 +22,22 @@
   width: 40%;
 }
 
-.left > h2{
-    margin-bottom: 5rem;
+.left > h1{
+    margin-bottom: 2rem;
     font-size: bold;
-    color: lavender;
-    white-space: nowrap;
+    color: rgb(244, 244, 255);
+    /* white-space: nowrap; */
     line-height: 50px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.left > h5{
-    color:lavender;
+.left > h4{
+    color:rgb(244, 244, 255);
     font-size: bold;
     line-height: 20px;
     font-weight: bold;
+    text-align: justify;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
 }
 
 .left > .buttons{
@@ -52,7 +54,7 @@
     border-radius: 50px;
     border: solid;
     border-color: rgb(255, 186, 48);
-    color: lavender;
+    color: rgb(244, 244, 255);
     background-color: rgb(38, 186, 255);
     padding: 0.75rem 1.75rem;
     cursor: pointer;
@@ -79,7 +81,7 @@
 }
 .disclaimer{
     margin-top: 3rem;
-    color: lavender;
+    color: rgb(244, 244, 255);
     font-size: 17px;
 }
 
@@ -90,6 +92,6 @@
 }
 
 .right > img{
-    height: 100%;
+    height: auto;
     width: 100%;
 }

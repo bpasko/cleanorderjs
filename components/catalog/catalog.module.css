@@ -22,19 +22,23 @@
     gap: 0.75rem;
 }
 
-.titles > h5{
+.titles > h1{
+    /* margin-bottom: 5rem; */
     font-size: bold;
-    color: lavender;
-    font-weight: 500;
+    color: rgb(244, 244, 255);
+    /* white-space: nowrap; */
+    /* line-height: 50px; */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .titles > h2{
     font-size: larger;
-    color: lavender;
+    color: rgb(244, 244, 255);
 }
 
 .categories{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 5rem;
@@ -50,19 +54,19 @@
     font-size: 18px;
     transition: 150ms all;
     background-color: rgb(38, 186, 255);
-    color:  lavender;
+    color:  rgb(244, 244, 255);
     font-weight: bold;
     border-radius: 70px;
     border: solid;
-    border-color: rgb(255, 186, 48);
+    border-color: #3c3c3c;
     transform: scale(1.200);
     box-shadow:
-    0 2px 4px rgba(0, 0, 0, 0.5), 
-    0 -2px 4px rgba(0, 0, 0, 0.5), 
-    2px 0 4px rgba(0, 0, 0, 0.5),
-    -2px 0 4px rgba(0, 0, 0, 0.5),
-    0 0 5px 0 rgb(76, 198, 247),
-    0 0 10px 0 rgba(0, 0, 0, 0.3);
+    0 1px 2px #686565, 
+    0 -1px 2px #686565, 
+    1px 0 2px #686565,
+    -1px 0 2px #686565,
+    0 0 5px 0 #686565,
+    0 0 5px 0 #686565;
     flex: 1;
     justify-content: center;
     text-align: center;
@@ -70,12 +74,12 @@
 
 .category.active{
     scale: 1.1;
-    background-color: rgb(255, 186, 48);
-    color: rgb(71, 144, 234);
+    background-color: rgb(38, 186, 255);
+    color: rgb(244, 244, 255);
     font-weight: bold;
     border-radius: 50px;
     border: solid;
-    border-color: rgb(255, 186, 48);
+    border-color: #f6fa8f;
     transform: scale(1.100);
     box-shadow:
     0 2px 4px rgba(0, 0, 0, 0.5), 
@@ -83,7 +87,7 @@
     2px 0 4px rgba(0, 0, 0, 0.5),
     -2px 0 4px rgba(0, 0, 0, 0.5),
     0 0 5px 0 rgb(76, 198, 247),
-    0 0 10px 0 rgba(0, 0, 0, 0.3);
+    0 0 5cap 0 rgba(0, 0, 0, 0.3);
 }
 
 .noMeal{

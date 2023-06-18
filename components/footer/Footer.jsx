@@ -6,10 +6,11 @@ const Footer = () => {
     <footer className={classes.footer}>
       <div className={classes.wrapper}>
         <div className={classes.col}>
-          <h2>O aplikacji:</h2>
-          <p>
-Aplikacja zaliczeniowa Uniwersytet WSB Merito
+          <h2>O aplikacji</h2>
+          <p><strong>Aplikacja zaliczeniowa Uniwersytet WSB Merito</strong>
           </p>
+          <p><strong>Autorzy:</strong> Magdalena Czajkowska, Szymon Kopalko,</p>
+          <p>Bartłomiej Pąśko</p>
         </div>
         <div className={classes.col}>
           <h2>Kontakt</h2>

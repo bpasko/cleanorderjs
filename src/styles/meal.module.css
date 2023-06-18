@@ -32,13 +32,13 @@
     margin-bottom: 3.75rem;
     text-transform: capitalize;
     font-size: 36px;
-    color:  lavender;
+    color:  rgb(244, 244, 255);
     margin-left: -0.5rem;
 }
 
 .category{
     font-size: 22px;
-    color:  lavender;
+    color:  rgb(244, 244, 255);
     margin-bottom: 5rem;
     font-weight: bold;
 }
@@ -51,7 +51,7 @@
     border: solid;
     border-color: rgb(255, 186, 48);
     background-color:  rgb(76, 198, 247);
-    color: lavender;
+    color: rgb(244, 244, 255);
     border-radius: 8px;
     margin-left: 1rem;
     box-shadow: 
@@ -89,7 +89,7 @@
     outline: none;
     border-radius: 50px;
     border: solid;
-    color: lavender;
+    color: rgb(244, 244, 255);
     border-color: rgb(255, 186, 48);
     background-color: rgb(76, 198, 247);
     padding: 15px;
@@ -142,7 +142,7 @@
     position: relative;
     border-radius: 50px;
     border: solid;
-    color: lavender;
+    color: rgb(244, 244, 255);
     border-color: rgb(255, 186, 48);
     background-color: rgb(71, 144, 234);
     padding-left: 50px;
@@ -195,7 +195,7 @@
     outline: none;
     border-radius: 50px;
     border: solid;
-    color: lavender;
+    color: rgb(244, 244, 255);
     border-color: rgb(255, 186, 48);
     background-color: rgb(71, 144, 234);
     padding: 15px;

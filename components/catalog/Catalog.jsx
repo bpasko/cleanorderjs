@@ -8,7 +8,7 @@ import { faBrush, faCity, faHouse, faKey, faPlus } from '@fortawesome/free-solid
 const Catalog = ({ meals }) => {
 
   console.log(meals)
-  const [activeCategory, setActiveCategory] = useState('all')
+  const [activeCategory, setActiveCategory] = useState('wszystkie')
   const [filteredMeals, setFilteredMeals] = useState([])
 
   useEffect(() => {
@@ -30,8 +30,8 @@ const Catalog = ({ meals }) => {
     <div className={classes.container}>
       <div className={classes.wrapper}>
         <div className={classes.titles}>
-          <h5>Co Cię interesuje?</h5>
-          <h2>Wybierz spośród kategorii sprzątania</h2>
+          {/* <h3>Co Cię interesuje?</h3> */}
+          <h1>Wybierz spośród kategorii sprzątania</h1>
         </div>
         <div className={classes.categories}>
           <span  onClick={() => setActiveCategory('wszystkie')} className={`${classes.category} ${activeCategory === 'wszystkie' ? classes.active : ''}`}>
@@ -41,19 +41,19 @@ const Catalog = ({ meals }) => {
             Sprzątanie domu
           </span> */}
           <span onClick={() => setActiveCategory('mieszkanie')} className={`${classes.category} ${activeCategory === 'mieszkanie' ? classes.active : ''}`}>
-            Sprzątanie mieszkania
+            Mieszkanie
           </span>
           <span onClick={() => setActiveCategory('biuro')} className={`${classes.category} ${activeCategory === 'biuro' ? classes.active : ''}`}>
-            Sprzątanie biura
+            Biuro
           </span>
           <span onClick={() => setActiveCategory('remont')} className={`${classes.category} ${activeCategory === 'remont' ? classes.active : ''}`}>
-            Sprzątanie po remoncie
+            Remont
           </span>
           <span onClick={() => setActiveCategory('wynajem')} className={`${classes.category} ${activeCategory === 'wynajem' ? classes.active : ''}`}>
-            Sprzątanie po wynajmie
+            Wynajem
           </span>
           <span onClick={() => setActiveCategory('dodatkowe')} className={`${classes.category} ${activeCategory === 'dodatkowe' ? classes.active : ''}`}>
-            Usługi dodatkowe
+            Dodatkowe
           </span>
         </div>
         {

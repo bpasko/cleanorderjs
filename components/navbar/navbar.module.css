@@ -2,7 +2,7 @@
     height:200px;
     width: 100%;
     background-color: rgb(38, 186, 255);
-    color: lavender;
+    color: rgb(244, 244, 255);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -40,7 +40,7 @@
     font-weight: bold;
     border-radius: 50px;
     border: solid;
-    color: lavender;
+    color: rgb(244, 244, 255);
     border-color: rgb(255, 186, 48);
     background-color: rgb(71, 144, 234);
     padding: 0.5rem 1.25rem;
@@ -80,7 +80,7 @@
     outline: none;
     border-radius: 50px;
     border: solid;
-    color: lavender;
+    color: rgb(244, 244, 255);
     border-color: rgb(255, 186, 48);
     background-color: rgb(71, 144, 234);
     padding: 15px;
@@ -115,7 +115,7 @@
     outline: none;
     border-radius: 50px;
     border: solid;
-    color: lavender;
+    color: rgb(244, 244, 255);
     border-color: rgb(255, 186, 48);
     background-color: rgb(71, 144, 234);
     padding: 15px;
@@ -149,7 +149,7 @@
     outline: none;
     border-radius: 50px;
     border: solid;
-    color: lavender;
+    color: rgb(244, 244, 255);
     border-color: rgb(255, 186, 48);
     background-color: rgb(71, 144, 234);
     padding: 15px;

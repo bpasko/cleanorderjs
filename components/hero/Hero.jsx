@@ -8,12 +8,12 @@ const Hero = () => {
     <div className={classes.container}>
       <div className={classes.wrapper}>
         <div className={classes.left}>
-          <h2>Zapewnimy Ci pełne wsparcie w sprzątaniu! </h2>
-          <h5>
+          <h1>Zapewnimy Ci pełne wsparcie w sprzątaniu! </h1>
+          <h4>
             Zajmujemy się kompleksowym sprzątaniem, aby Państwa przestrzeń zawsze błyszczała. <br />Nasza doświadczona i profesjonalna ekipa oferuje szeroki zakres usług sprzątania dla mieszkań, domów, biur i obiektów komercyjnych.<br />
 
             Nie trać czasu na sprzątanie - powierz to nam! Skontaktuj się z nami już dziś, a my przyjedziemy i odmienimy Twoją przestrzeń na lepsze. Jesteśmy Twoim partnerem w czystości!<br /><br /><br />
-          </h5>
+          </h4>
           <h1>
           <strong>Aby złożyć zamówienie wybierz interesującą Cię usługę.</strong>
           </h1>
