@@ -20,9 +20,9 @@ const Navbar = () => {
           <h3>let us handle this for you...</h3>
         </Link>
         <div className={classes.center}>
-          <div className={classes.listItem}><FontAwesomeIcon icon={faList} />OFERTA</div>
-          <div className={classes.listItem}><FontAwesomeIcon icon={faFaceSmile} /> O NAS</div>
-          <div className={classes.listItem}><FontAwesomeIcon icon={faPhone} />KONTAKT</div>
+          <div className={classes.listItem} ><FontAwesomeIcon icon={faList} />OFERTA</div>
+          <div className={classes.listItem} ><FontAwesomeIcon icon={faFaceSmile} /> O NAS</div>
+          <div className={classes.listItem} ><FontAwesomeIcon icon={faPhone} />KONTAKT</div>
           </div> 
         <div className={classes.right}>
           {session.status !== 'authenticated'

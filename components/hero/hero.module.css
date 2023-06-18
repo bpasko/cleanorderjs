@@ -13,28 +13,29 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    gap: 12.5rem;
+    gap: 5rem;
 }
 
 .left{
   display: flex;
   flex-direction: column;
+  width: 40%;
 }
 
 .left > h2{
     margin-bottom: 5rem;
-    font-size: 46px;
+    font-size: bold;
     color: lavender;
     white-space: nowrap;
-    line-height: 65px;
+    line-height: 50px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .left > h5{
     color:lavender;
-    font-size: 24px;
-    line-height: 39px;
-    font-weight: 500;
+    font-size: bold;
+    line-height: 20px;
+    font-weight: bold;
 }
 
 .left > .buttons{
@@ -83,13 +84,12 @@
 }
 
 .right{
-    height: 750px;
-    width: 45%;
+    height: 500px;
+    width: 60%;
     align-items: center;
 }
 
 .right > img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
 }

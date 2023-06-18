@@ -40,19 +40,19 @@ const Catalog = ({ meals }) => {
           {/* <span onClick={() => setActiveCategory('dom')} className={`${classes.category} ${activeCategory === 'dom' ? classes.active : ''}`}>
             Sprzątanie domu
           </span> */}
-          <span onClick={() => setActiveCategory('mieszkanie')} className={`${classes.category} ${activeCategory === 'mieszkanie' ? classes.active : ''}`}><FontAwesomeIcon icon={faHouse} style={{ transform: 'scale(0.8)' }} />
+          <span onClick={() => setActiveCategory('mieszkanie')} className={`${classes.category} ${activeCategory === 'mieszkanie' ? classes.active : ''}`}>
             Sprzątanie mieszkania
           </span>
-          <span onClick={() => setActiveCategory('biuro')} className={`${classes.category} ${activeCategory === 'biuro' ? classes.active : ''}`}><FontAwesomeIcon icon={faCity} style={{transform: 'scale(0.8)'}} />
+          <span onClick={() => setActiveCategory('biuro')} className={`${classes.category} ${activeCategory === 'biuro' ? classes.active : ''}`}>
             Sprzątanie biura
           </span>
-          <span onClick={() => setActiveCategory('remont')} className={`${classes.category} ${activeCategory === 'remont' ? classes.active : ''}`}><FontAwesomeIcon icon={faBrush} style={{transform: 'scale(0.8)'}} />
+          <span onClick={() => setActiveCategory('remont')} className={`${classes.category} ${activeCategory === 'remont' ? classes.active : ''}`}>
             Sprzątanie po remoncie
           </span>
-          <span onClick={() => setActiveCategory('wynajem')} className={`${classes.category} ${activeCategory === 'wynajem' ? classes.active : ''}`}><FontAwesomeIcon icon={faKey} style={{transform: 'scale(0.8)'}} />
+          <span onClick={() => setActiveCategory('wynajem')} className={`${classes.category} ${activeCategory === 'wynajem' ? classes.active : ''}`}>
             Sprzątanie po wynajmie
           </span>
-          <span onClick={() => setActiveCategory('dodatkowe')} className={`${classes.category} ${activeCategory === 'dodatkowe' ? classes.active : ''}`}><FontAwesomeIcon icon={faPlus} style={{transform: 'scale(0.8)'}} />
+          <span onClick={() => setActiveCategory('dodatkowe')} className={`${classes.category} ${activeCategory === 'dodatkowe' ? classes.active : ''}`}>
             Usługi dodatkowe
           </span>
         </div>
